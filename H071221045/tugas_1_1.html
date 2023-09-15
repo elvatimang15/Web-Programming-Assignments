@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi</title>
+</head>
+<body>
+    <form>
+        <h1>Identitas Diri</h1>
+        <label for="nama">Nama: </label> <br>
+        <input type="text" name="nama" required> <br> <br>
+    
+        <label for="email">Email: </label> <br>
+        <input type="email" name="email" required> <br> <br>
+        
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label> <br> <br>
+
+        <label for="servis">Servis yang dibutuhkan:</label>
+        <select id="servis" name="servis">
+            <option value="python">Python Oriented Programming</option>
+            <option value="java">Java Oriented Programming</option>
+            <option value="web">Web Design</option>
+            <option value="photo">Photoshop</option>
+            <option value="video">Video Editing</option>
+        </select>
+        <br> <br>
+
+        <label for="deskripsi">Deskripsi: </label> <br>
+        <textarea id="deskripsi" name="deskripsi" rows="4" cols="50"></textarea>
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+
+
+    </form>
+</body>
+</html>
