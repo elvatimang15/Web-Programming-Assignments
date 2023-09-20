@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #1F6E8C;
+            position: fixed;
+            width: 100%;
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            z-index: 1;
+            height: 80px;
+        }
+
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+
+
+        .navbar a:hover {
+            background-color: #2E8A99;
+        }
+
+        .content {
+            padding: 100px 20px;
+            text-align: center;
+            
+        }
+
+        .description {
+            margin: 0 auto;
+            max-width: 800px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .gallery {
+            gap: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .gambar {
+            overflow: hidden;
+            position: relative;
+            display: flex;
+        }
+
+        .gambar img {
+            width: 400px;
+            height: auto;
+            transition: 0.5s ease;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+        }
+
+
+        .gallery img {
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1); 
+            transition: transform 0.3s ease; 
+        }
+
+
+
+        .footer {
+            background-color: #0E2954;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .university-logo {
+            width: 60px;
+            height: 60px;
+            margin-left: 100px;
+        }
+
+        .univ {
+            margin-left: 50px;
+        }
+        .contact {
+            text-align: left;
+            margin-right: 120px;
+            font-size: 15px;
+        }
+
+        
+        @media (max-width: 768px) {
+            .description {
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#description">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="content">
+        <div class="description" id="description">
+            <p>
+                Cybercity is a rapidly evolving urban concept in the current digital era. 
+                It is a manifestation of the digital transformation that has changed the way we live, 
+                work, and interact. In Cybercity, information technology and communication play a central 
+                role in managing urban infrastructure, providing public services, and enhancing the quality 
+                of life for its residents.In Cybercity, ultra-fast internet connectivity and easy access to 
+                various smart devices have become the norm. Smart and innovative Smart City policies have been 
+                implemented to improve energy efficiency, transportation, and waste management. This leads to a 
+                reduction in carbon footprint and the creation of greener and more sustainable cities.One crucial 
+                aspect of Cybercity is the Internet of Things (IoT) concept, where various devices and sensors are 
+                connected in a network that functions to collect and share real-time data. This enables better monitoring 
+                and control in various sectors such as healthcare, security, and the environment.In Cybercity, 
+                residents can access government services online, keep track of city developments through mobile 
+                applications, and participate in more democratic decision-making.
+            </p>
+        </div>
+    </div>
+
+    <div class="gallery" id="gallery">
+        <div class="gambar"><img src="images/wallpaperbetter.jpg" alt="Gambar 1"></div>
+        <div class="gambar"><img src="images/wallpaperflare.com_wallpaper (2).jpg" alt="Gambar 2"></div>
+        <div class="gambar"><img src="images/wallpaperflare.com_wallpaper (3).jpg" alt="Gambar 3"></div>
+        <div class="gambar"><img src="images/wallpaperflare.com_wallpaper (4).jpg" alt="Gambar 4"></div>
+        <div class="gambar"><img src="images/wallpaperflare.com_wallpaper (5).jpg" alt="Gambar 5"></div>
+        <div class="gambar"><img src="images/wallpaperflare.com_wallpaper (11).jpg" alt="Gambar 6"></div>
+        <div class="gambar"><img src="images/wallpaperflare.com_wallpaper (7).jpg" alt="Gambar 7"></div>
+        <div class="gambar"><img src="images/wallpaperflare.com_wallpaper (8).jpg" alt="Gambar 8"></div>
+        <div class="gambar"><img src="images/wallpaperflare.com_wallpaper (9).jpg" alt="Gambar 9"></div>
+    </div>
+
+    <div class="footer">
+        <div>
+            <img class="university-logo" src="images/Logo_UH.png" alt="Logo Universitas">
+            <p class="univ">Universitas Hasanuddin</p>
+        </div>
+        <div class="contact" id="contact">
+            <p>Phone Number: 085173235611</p>
+            <p>Email: ancakiky@gmail.com</p>
+            <p>Instagram: @ardnsyhsrifh</p>
+            <p>Facebook: ardnsyhsrifh</p>
+        </div>
+    </div>
+</body>
+</html>
