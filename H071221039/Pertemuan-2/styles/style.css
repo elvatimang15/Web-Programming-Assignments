@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial;
+    scroll-behavior: smooth;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+}
+
+a:hover{
+    background-color: tomato;
+}
+
+.header{
+    background-color: orange;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.content-description{
+    text-align: justify;
+    width: 75%;
+    margin: auto;
+    margin-top: 80px;
+}
+.content-photo{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin: 0;
+    text-align: center;
+}
+
+.gallery {
+    padding: 40px ;
+}
+
+.container-gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
+.gallery-images img {
+    max-width: 100%;
+}
+
+.img {
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+ 
+.image {
+    overflow: hidden;
+    height: 100%;
+    transition: transform 0.3s ease; 
+}
+
+.img:hover {
+    transform: scale(1.1);
+}
+
+.footer{
+    background-color: darkslategrey;
+    width: 100%;
+    text-align: center;
+    color: white;
+    display: grid;
+    padding: 20px 40px;
+}
+
+[class *= "col-"]{
+    padding: 20px;
+}
+
+.unhas img{
+    width: 20%;
+}
+
+.contact p{
+    padding: 10px;
+}
+@media only screen and (min-width: 480px){
+    .gallery-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .gallery-images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .footer{
+        display:flex;
+        padding: 20px 40px;
+        text-align: left;
+        justify-content: space-between;
+    }
+
+    .unhas{
+        width: 30%;
+        text-align: center;
+    }
+    .contact{
+        width: 30%;
+        text-align: left;
+    }
+    .unhas img{
+        width: 30%;
+    }
+    
+}
+    
