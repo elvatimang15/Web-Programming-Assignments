@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;  
+}
+
+/*Untuk navbar*/
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #705c60;
+    padding: 1.4rem 7%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 8;
+    /* ini supaya tidak tertindih ki tulisan di navbar */
+}
+
+.navbar .navbar-nav a {
+    display: inline-block;                                                                                                                                                                                                                                                                                                  
+    padding: 0 1rem;
+    color: blanchedalmond;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.navbar .navbar-nav a:hover {
+    color: burlywood;
+    transform: scale(1.5);
+}
+
+.tittle {
+    display: flex;
+    justify-content: center;
+    padding : 5rem 0 2rem;
+}
+
+.tittle h1 {
+    color : #705c60;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 650;
+}
+
+.about p {
+    display: flex;
+    justify-content: center;
+    /* padding: 0 7%; */
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 2rem 0 0;
+}
+    
+.container .Drakor img {
+    width: 80%;
+    padding: 1rem 0;
+    transition: 1s;
+    text-align: center;
+}
+    
+.container .Drakor img:hover {
+    transform: scale(1.1);
+}
+    
+footer {
+    background-color: #705c60;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+}
+    
+footer .netflix img {
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem 1rem;
+    align-items: center;
+}
+    
+footer .links {
+    color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    /* column itu fungsi nya biar tulisan nya itu bersusun ke bawah */
+    text-align: center;
+}
+
+footer .links p {
+    display: flex;
+    /* justify-content: flex-end; */
+    /* color: blanchedalmond; */
+    /* padding: 0.3rem 7rem; */
+    justify-content: space-between;
+    /* padding-right: 19px; */
+    font-size: small;
+} 
