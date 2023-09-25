@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: red;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #ff5555;
+}
+
+.centered-text {
+    text-align: justify;
+    justify-content: center;
+    margin: auto;
+    width: 60%;
+    margin-top: 100px; 
+    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* justify-content: center; */
+    margin: auto;
+    margin-top: 50px;
+}
+
+.image-grid img {
+    max-width: 300px; 
+    margin: 10px;
+    /* border-radius: 8px; */
+    transition: transform 0.3s;
+    /* justify-content: center; */
+}
+
+.image-grid img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: red;
+    color: white;
+    margin-top: 80px;
+}
+
+.contact-bar {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 10px;
+    align-items: center;
+}
+
+.contact-info {
+    text-align: left; 
+}
+
+.contact-image {
+    max-width: 100%; 
+    border-radius: 8px;
+}
+
+.contact-image img {
+    max-width: 100px; 
+    border-radius: 8px;
+    margin-left: 35px; 
+}
+
+@media only screen and (max-width: 992px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 767px) {
+    .navbar a {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .main-content {
+        margin-top: 60px; /* Adjust top margin for smaller screens */
+    }
+    
+    .image-grid {
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    .image-grid img {
+        width: 80%;
+    }
+
+    .contact-bar {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .contact-image {
+        justify-content: center;
+    }
+
+    .contact-info {
+        justify-content: center;
+    }
+
+}
