@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>Landing Page</title>
+  <!-- Mengimpor stylesheet Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow-lg">
+    <div class="container">
+      <div class="navbar-brand">
+        <a href="#"><img src="img/v.png" alt="" style="width: 15%;"></i></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="Home">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="Sinopsis">
+            <a class="nav-link" href="#sinopsis">Sinopsis</a>
+          </li>
+          <li class="Cast">
+            <a class="nav-link" href="#cast">Cast</a>
+          </li>
+          <li class="Trailer">
+            <a class="nav-link" href="#trailer">Trailer</a>
+          </li>
+          <!-- <li class="nav-item">
+                <a class="nav-link" href="#cart"><i class='bx bxs-cart fs-4'></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#user"><i class='bx bxs-user fs-4'></i></a>
+              </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Caraousel -->
+  <section class="home" id="home">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Sinopsis Section -->
+  <section class="sinopsis" id="sinopsis">
+    <div class="container pt-5">
+      <h1 class="text-center p-5 pb-3">Sinopsis</h1>
+      <div class="content text-center">
+        <img src="img/4.jpg" alt="" class="mb-4">
+        <h3 class="mb-4">VINCENZO</h3>
+        <p>Drama yang menceritakan tentang seorang mafia yang berasal dari Italia dan kemudian menetap sementara di
+          Korea Selatan karena sebuah urusan,
+          hingga pada akhirnya harus terjun langsung ke dalam sebuah pertarungan hukum dan juga bisnis dengan perusahaan
+          yang bernama BABEL GROUP.
+          Tidak perlu diragukan kembali bahwa begitu banyak sekali pemaknaan hidup yang mampu untuk kita petik dari
+          drama Vincenzo.
+          Adapaun nilai-nlainyam, yaitu : Menggunakan Hukum Sebagai Alat untuk Menggapai Kebaikan, Kerjasama Tim yang
+          Solid, Usaha Keras tidak Menghianati Hasil, Bisnis Sebagai Navigasi untuk Meraih Nilai Kehidupan</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Card Section -->
+  <section class="cast pt-5 pb-5" id="cast">
+    <h1 class="text-center pt-5">Cast</h1>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <img src="img/sjk.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Song Joong Ki</h5>
+              <h6 class="card-text">Vincenzo</h6>
+              <a href="https://asianwiki.com/Song_Joong-Ki" class="btn">Profil</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <img src="img/jyb.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Jeon Yeo Been</h5>
+              <h6 class="card-text">Hong Cha Young</h6>
+              <a href="https://asianwiki.com/Jeon_Yeo-Bin_(1989)" class="btn">Profil</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <img src="img/okt.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ok Taechyon</h5>
+              <h6 class="card-text">Jang Jun-Woo</h6>
+              <a href="https://asianwiki.com/TaecYeon" class="btn">Profil</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <img src="img/kdy.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kwak Dong Yeon</h5>
+              <h6 class="card-text">Jang Han-Seo</h6>
+              <a href="https://asianwiki.com/Kwak_Dong-Yeon" class="btn">Profil</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <img src="img/ksc.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kim Sung Cheol</h5>
+              <h6 class="card-text">Hwang Min-Sung</h6>
+              <a href="https://asianwiki.com/Kim_Sung-Cheol_(1991)" class="btn">Profil</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <img src="img/syh.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Seo Ye Hwa</h5>
+              <h6 class="card-text">Ahn Gi Seok</h6>
+              <a href="https://asianwiki.com/Seo_Ye-Hwa" class="btn">Profil</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <img src="img/ybh.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Yoon Byung Hee</h5>
+              <h6 class="card-text">Nam Ju-Seong</h6>
+              <a href="https://asianwiki.com/Yoon_Byung-Hee_(1981)" class="btn">Profil</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <img src="img/kyj.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kim Yeo Jin</h5>
+              <h6 class="card-text">Choi Myung Hee</h6>
+              <a href="https://asianwiki.com/Kim_Yeo-Jin" class="btn">Profil</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trailer Section -->
+  <section class="trailer" id="trailer">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h1 class="text-center pt-5">Trailer</h1>
+        </div>
+      </div>
+      <div class="video" style="position: relative; padding-bottom: 58%; height: auto; ">
+        <iframe width="3900" height="900" src="https://www.youtube.com/embed/_J8tYxYB_YU"
+          title="Vincenzo | Official Trailer | Netflix" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen style="position: absolute; top: 10%; left: 0; width: 100%; height: 100%;" frameborder="0"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <section id="footer" class="footer py-5" style="background-color: white; ">
+      <div class="fot">
+        <img src="img/logo.jpg" alt="" style="width: 8%;">
+      </div>
+      <div class="cp">
+        <li>
+          <p>Jumlah episode: 20</p>
+        </li>
+        <li>
+          <p>Genre: Drama Korea, Komedi hitam</p>
+        </li>
+        <li>
+          <p>Pembuat program: Studio Dragon</p>
+        </li>
+        <li>
+          <p>Episode pertama: 20 Februari 2021 (Korea Selatan)</p>
+        </li>
+        <li>
+          <p>Episode terakhir: 2 Mei 2021</p>
+        </li>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

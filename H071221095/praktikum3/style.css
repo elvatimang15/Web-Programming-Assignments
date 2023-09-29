@@ -1,0 +1,122 @@
+/* body {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+} */
+
+/*Untuk navbar*/
+.navbar {
+    background-color: black;
+}
+
+.navbar .navbar-nav a {
+    display: inline-block;
+    padding: 0 1rem;
+    color: white;
+    font-weight: 750;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+}
+
+.navbar .navbar-nav a:hover {
+    color: rgb(219, 24, 24);
+}
+
+.sinopsis {
+    color: #000;
+    min-height: 100vh;
+}
+
+.sinopsis h1, .sinopsis h3, .cast h1, .trailer h1 {
+    font-weight: 700;
+}
+
+.sinopsis .content {
+    justify-content: center;
+    align-items: center;
+}
+
+.sinopsis .content img {
+    object-position: center;
+    width: 30rem;
+    border-radius: 20px;
+}
+
+.sinopsis .content p {
+    max-width: 80%;
+    margin-left: 10%;
+    text-align: justify;
+}
+
+.cast {
+    align-items: center;
+   
+}
+.cast .container .card{
+    margin-top: 3rem;
+    margin-left: 0.9rem;
+    box-sizing: border-box;
+    border: 2px;
+    width: 20rem;
+    font-family: cursive;
+}
+
+.cast .container .card .btn {
+    background-color: rgb(80, 77, 77);
+    color: white;
+    font-family: sans-serif;
+}
+
+.cast .container .card a:hover {
+    color: rgb(219, 24, 24);
+}
+
+.cast .container img {
+    object-fit: cover;
+    aspect-ratio: 2/2;
+    width: 20rem;
+    border-radius: 15px;
+}
+
+.trailer {
+    padding: 0rem 2%;
+    /* margin: 0 auto; */
+    background-color: black;
+}
+.trailer .container{
+    color: white;
+    object-fit: cover;
+    object-position: center;
+    width: 50%;
+    aspect-ratio: 1/1;
+}
+
+.footer{
+    margin-left: -2%;
+    margin-right: -2%;
+}
+.fot {
+    text-align: center;
+    
+}
+
+.cp {
+    text-align: center;
+    list-style-type: none;
+}
+
+@media (max-width: 768px) {
+    .navbar-toggler {
+        position: absolute;
+        right: 10px; /* Sesuaikan jarak dari kanan sesuai kebutuhan */
+        top: 17px; /* Sesuaikan jarak dari atas sesuai kebutuhan */
+    }
+    .navbar-toggler-icon {
+        border: 2px solid rgb(240, 237, 230); /* Menambahkan border tebal berwarna putih */
+        padding: 25px; /* Memberikan padding agar ikon terlihat lebih tebal */
+        border-radius: 10px; /* Mengatur sudut border */
+    }
+
+    .cast .container .card{
+        margin: 0 auto;
+    }
+}
