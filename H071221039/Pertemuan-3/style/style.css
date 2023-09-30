@@ -1,0 +1,42 @@
+
+
+.section-home{
+    padding-top: 3rem;
+    background-image: url("../img/coffee.jpg");
+    text-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* background-size: cover; */
+    min-height: 100vh;
+    background-position: center;
+    position: relative;
+}
+
+
+.section-home .content{
+    font-family: Tahoma;
+}
+.section-home h1{
+    font-weight: bold;
+    font-size: 63px;
+}
+
+@media (max-width: 1366px) {
+    html{
+        font-size: 75%;
+    }
+}
+@media (max-width: 758px) {
+    html{
+        font-size: 62.5%;
+    }
+}
+@media (max-width: 450px) {
+    html{
+        font-size: 75%;
+    }
+}
+
+
