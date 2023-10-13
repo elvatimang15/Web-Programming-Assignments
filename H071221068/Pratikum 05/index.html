@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZwT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-color: #343a40;
+        color: #fff;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 50px auto;
+      }
+
+      h1, h3, p {
+        color: #ffffff;
+      }
+
+      .bot-cards, .my-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+
+      .card {
+        max-width: 100px;
+        height: auto;
+      }
+
+      #result {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-top: 20px;
+        color: #28a745;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+
+      .btn-primary, .btn-success, .btn-danger {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 1.2em;
+        margin-top: 10px;
+      }
+
+      body.dark-mode {
+        background-color: #212529;
+        color: #fff;
+      }
+
+      .btn-dark {
+        background-color: #343a40;
+        color: #fff;
+        transition: background-color 0.3s;
+        margin-top: 10px;
+      }
+
+      .btn-dark:hover {
+        background-color: #495057;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-center">
+        <h1>Blackjack</h1>
+        <h3>Play a Round?</h3>
+      </div>
+
+      <div class="text-center">
+        <h3>Bot Cards:</h3>
+        <div class="bot-cards">
+          <img class="hidden-card card" src="./images/cards/BACK.png" alt="" />
+        </div>
+        <h3>Bot Sums: <span class="bot-sums"></span></h3>
+      </div>
+
+      <div class="text-center">
+        <h3>Your Cards:</h3>
+        <div class="my-cards"></div>
+        <h3>Sums: <span class="my-sums"></span></h3>
+      </div>
+
+      <p id="result" class="text-center"></p>
+
+      <div class="text-center">
+        <h3>Jumlah uang anda : Rp. <span id="my-money">5000</span></h3>
+        <input type="number" class="form-control mb-3" required />
+      </div>
+
+      <button class="btn btn-primary" id="btn-start-game">START GAME</button>
+      <button class="btn btn-success" id="btn-take">Take A Card</button>
+      <button class="btn btn-danger" id="btn-hold">Hold Card</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
