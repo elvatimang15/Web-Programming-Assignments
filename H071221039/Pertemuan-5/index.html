@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Jack</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Black Jack</h1>
+            <p>Play A Round?</p>
+        </div>
+
+        <div class="ai">
+            <p>AI Cards : </p>
+            <div cards="dealer-cards">
+                <img id="hidden" src="img/BACK.png">
+            </div>
+            <p>Sums : <span id="dealer-sum"></span> </p>
+        </div>
+
+        <div class="you">
+            <p>Your Cards :</p>
+            <div id="your-cards"></div>
+            <p>Sums : <span id="your-sum"></span></p>
+        </div>
+
+        <button id="hit">Hit</button>
+        <button id="stay">Stay</button>
+        <p id="results"></p>
+        <div class="money">
+            <p>Jumlah Uang Anda : Rp. <span id="money">5000</span></p>
+        </div>
+        <div class="inputMoney">
+            <form>
+                <input type="text" id="inputMoney">
+            </form>
+        </div>
+
+        <div class="buttons">
+            <button id="btnStartGame">Start Game</button>
+            <button id="btnPlayAgain">Want to play again?</button>
+            <button id="btnResetMoney">Reset Money</button>
+        </div>
+
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
