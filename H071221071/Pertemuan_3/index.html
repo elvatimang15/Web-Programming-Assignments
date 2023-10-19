@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <title>PERSONAL WEBSITE | SALDAN RAMA</title>
+    <link rel="image icon" type="png" 
+    href="image/iconimage2.png"
+    >
+
+  </head>
+  <body>
+    <!-- NAVBAR SECTION -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm " style="background-color: rgba(0, 0, 0, 0.159);"
+    >
+      <div class="container">
+        <!-- LOGO -->
+        <a class="navbar-brand fs-3" id="logo" href="#"
+          >Saldan <span>Rama</span></a
+        >
+
+        <!-- Burger -->
+        <button
+          class="navbar-toggler shadow-none border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- SideBar -->
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <!-- SideBar Header -->
+          <div class="offcanvas-header text-white border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Saldan Rama
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <!-- SideBar Body -->
+          <div class="offcanvas-body" id="offcanvas-body">
+            <ul
+              class="navbar-nav justify-content-end align-item-center fs-5 flex-grow-1 pe-3"
+            >
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >About me</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#project">Project</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- Hero Section -->
+    <section class="heroSection">  
+        <div class="container py-5" >
+          <div class="row d-flex flex-row-reverse align-items-center">
+            <div class="col-lg-5 offset-lg-2">
+                <img 
+                  src="image/heroLogo.png"
+                  alt=""
+                  width="100%"
+                />
+            </div>
+            <div class="col-lg-5 pt-5 text-start text-white">
+              <h1>i'm <span>Saldan Rama,</span></h1>
+              <h1 class="text2">The Pukimak <br>
+              Designer</h1> <br>
+
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi vero sequi, veniam impedit quisquam deleniti accusantium, corrupti odit sed ex, asperiores est eius? Dolore tempora minima laudantium eaque cum nostrum!</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-2">
+              <a href="https://instagram.com/eiraxa.exe">
+                <button type="button" class="btn btn-outline-light">Hire Me</button>
+              </a>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- END HeroSection -->
+
+<!-- Services  -->
+<section class="servicessection" id="services" style="background-color: #1D2228;">
+  <div class="container">
+    <div class="row py-4">
+      <div class="col-12 text-center">
+        <h2 class="text-light">Services</h2>
+        <p class="text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+    <div class="row py-lg-4">
+      <div class="col-md-4">
+        <div class="card mb-3 text-bg-dark" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="image/services _img/uiux.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">UI/UX Design</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-3 text-bg-dark" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="image/services _img/graphic.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Graphic Design</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-3 text-bg-dark" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="image/services _img/web.gif" class="img-fluid rounded-start" alt="..." style="background-size: cover;">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Web Development</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END Services -->
+
+<!-- Project -->
+<section id="project" style="background-color: rgb(255, 255, 255);" class="text-bg-dark">
+  <div class="container py-4">
+        <h2 class="text-center">Project</h2>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, officia!</p>  
+
+        <div class="row py-5">
+          <div class="col-md-4">
+            <div class="card text-bg-dark">
+              <img src="image/project_img/JERSEY.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5>Esport Jersey</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card text-bg-dark">
+              <img src="image/project_img/logodesign.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5>Esport Logo</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card text-bg-dark">
+              <img src="image/project_img/graphicdesign.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5>T-Shirt Design</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+</section>
+<!-- END Project -->
+
+<!-- Contact -->
+<section id="contact" style="background-color: #1D2228;">
+  <div class="container py-5">
+    <div class="row text-center">
+      <div class="col">
+        <h2 class="text-light">Contact Me</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label text-light">Nama Lengkap</label>
+            <input type="text" class="form-control text-bg-dark" id="name" aria-describedby="name" />
+          <div class="mb-3">
+            <label for="email" class="form-label text-light">Email</label>
+            <input type="email" class="form-control text-bg-dark" id="email" aria-describedby="email" />
+            <div class="mb-3">
+                <label for="pesan" class="form-label text-light">Pesan</label>
+                <textarea class="form-control text-bg-dark" id="pesan" rows="3"></textarea>
+            </div>
+              <button type="submit" class="btn btn-outline-light">KIRIM</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- END Contact -->
+
+<!-- Footer -->
+<footer class=" text-center py-5 text-bg-dark" >
+  <p>Created by <a href="https://www.instagram.com/eiraxa.exe/" class="text-white fw-bold">eiraxa.exe</a></p>
+  </footer>
+  <!-- Akhir Footer -->
+  </body>
+</html>
