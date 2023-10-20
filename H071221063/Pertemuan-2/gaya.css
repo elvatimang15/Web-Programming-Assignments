@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat Medium, sans-serif;
+}
+
+.navbar {
+    background-color: #da71dc;
+    position: fixed;
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    z-index: 1;
+    height: 80px;
+}
+
+
+.navbar a {
+    text-decoration: solid;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #6e146f;
+}
+
+.content {
+    padding: 100px 20px;
+    text-align:justify;
+}
+
+.deskripsi {
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.gallery {
+    gap:20px;   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gambar {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+.gambar img {
+    
+    width: 400px;
+    height: auto;
+    transition: 0.5s ease;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.gallery img {
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+
+.footer {
+    background-color: #c74796;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.logo-kampus {
+    width: 60px;
+    height: 60px;
+    margin-left: 115px;
+}
+
+.univ {
+    margin-left: 50px;
+}
+
+.contact {
+    text-align: left;
+    margin-right: 105px;
+    font-size: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .deskripsi {
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .footer{
+        justify-content: center;
+    }
+}
