@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Praktikum 5</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <button id="btn-start-game">Start Game</button>
+      <button id="btn-take">Take A Card</button>
+      <button id="btn-hold">Hold Card</button>
+    </nav>
+
+    <h1>Blackjack</h1>
+    <br />
+    <h2>Mulai Bermain?</h2>
+    <h3 class="result" style="animation: scrollToBottom 0.5s ease-in-out"></h3>
+    <br />
+
+    <aside class="my-info">
+      <div>
+        <h3>My Sums</h3>
+        <p class="my-sums">0</p>
+      </div>
+      <h3>
+        My Money <br />
+        Rp. <span id="my-money">100000</span>
+      </h3>
+      <div>
+        <h3>Depo</h3>
+        <input type="number" required min="0" />
+      </div>
+    </aside>
+
+    <aside class="bot-info">
+      <div>
+        <h3>Bot Sums</h3>
+        <p class="bot-sums">0</p>
+      </div>
+    </aside>
+
+    <h3>Bot Cards:</h3>
+    <div class="bot-cards">
+      <img
+        class="hidden-card"
+        src="./images/cards/BACK.png"
+        alt="Hidden Card"
+      />
+    </div>
+    <br />
+
+    <h3>Your Cards:</h3>
+    <div class="my-cards"></div>
+
+    <dialog id="result-modal">
+      <p class="result"></p>
+      <img id="result-img" style="width: 75%" />
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
