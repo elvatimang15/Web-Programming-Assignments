@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FORM PAY</title>
+    <link rel="stylesheet" href="form.css">
+   
+  </head>
+  <body>
+  <div class="container">
+    <h1 style="margin:10px;">PAYMENT</h1>
+    <form class="" action="index.html" method="post">
+        <input required class="input-form laf" type="text" name="" value="" placeholder="Nama">
+        <input required class="input-form laf" type="text" name="" value="" placeholder="No.HP">
+        <select required class="input-form laf" name="pilihan_destinasi" id="destinasiSelect">
+            <option value="Choose">Choose your NFT</option>
+            <option value="Kawah Putih">Kawah Putih</option>
+            <option value="Kamodjang Village">Kamodjang Village</option>
+            <option value="Gunung Putri">Gunung Putri</option>
+            <option value="Nimo Highland">Nimo Highland</option>
+        </select>
+        <input required class="input-form-number laf" type="text" name="" value="" ng-model="harga" id="hargaInput" readonly>
+    </form>
+    
+    <script>
+        // Menentukan elemen-elemen yang akan digunakan
+        var destinasiSelect = document.getElementById("destinasiSelect");
+        var hargaInput = document.getElementById("hargaInput");
+    
+        // Mendengarkan perubahan dalam elemen select
+        destinasiSelect.addEventListener("change", function() {
+            // Mendapatkan nilai yang dipilih dalam dropdown
+            var pilihanDestinasi = destinasiSelect.value;
+    
+            // Memeriksa pilihan dan mengatur harga sesuai
+            if (pilihanDestinasi === "Kawah Putih") {
+                hargaInput.value = '$ 200';
+            }  if (pilihanDestinasi === "Kamodjang Village") {
+                hargaInput.value = '$ 250';
+            }  if (pilihanDestinasi === "Gunung Putri") {
+                hargaInput.value = '$ 300';
+            }
+              else if (pilihanDestinasi === "Nimo Highland") {
+                hargaInput.value = '$ 1000' 
+            }
+        });
+    </script>
+    
+      <div style="overflow-x:auto;">
+        <label>Pilih Metode Pembayaran</label>
+        <table border=0 cellpadding="10">
+          <tr>
+            <th><input type="radio" name="metode_pembayaran" value=""><img src="img/bni.png" width="60px" height="20px"></th>
+            <th><input type="radio" name="metode_pembayaran" value=""><img src="img/bri.png" width="60px" height="25px"></th>
+            <th><input type="radio" name="metode_pembayaran" value=""><img src="img/bjb.png" width="60px" height="30px"></th>
+            <th><input type="radio" name="metode_pembayaran" value=""><img src="img/bankdki.png" width="60px" height="25px"></th>
+            <th><input type="radio" name="metode_pembayaran" value=""><img src="img/bankbb.png" width="60px" height="20px"></th>
+            <th><input type="radio" name="metode_pembayaran" value=""><img src="img/logo-bca.png" width="60px" height="20px"></th>
+          </tr>
+          <tr>
+            <th><input type="radio" name="metode_pembayaran" value=""><img src="img/visa.png" width="60px" height="30px"></th>
+            <th><input type="radio" name="metode_pembayaran" value=""><img src="img/masterc.png" width="60px" height="30px"></th>
+            <th><input type="radio" name="metode_pembayaran" value=""><img src="img/paypal.png" width="60px" height="20px"></th>
+            <th><input type="radio" name="metode_pembayaran" value=""><img src="img/alfa.jpg" width="70px" height="50px"></th>
+            <th><input type="radio" name="metode_pembayaran" value=""><img src="img/indomaret.png" width="60px" height="20px"></th>
+            <th><input type="radio" name="metode_pembayaran" value=""><img src="img/gopay.jpg" width="65px" height="40px"></th>
+          </tr>
+        </table>
+      </div>
+      <button class="btn-form-pay">Pay</button>
+      <a class="nav-item btn tombol" href="index.html"> Batal</a>
+    </form>
+  </div>
+
+  </body>
+</html>
