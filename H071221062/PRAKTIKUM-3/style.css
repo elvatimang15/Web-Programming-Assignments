@@ -1,0 +1,203 @@
+/* navbar */
+
+.navbar{
+    position: relative;
+    z-index: 2;
+}
+.navbar-brand{
+    font-family: Viga;
+    font-size: 32px;
+}
+
+.navbar-brand span {
+    color: red;
+}
+
+.navbar-nav {
+    font-family: Dela Gothic One;
+}
+
+.navbar-nav .tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+    color: black;
+}
+
+.jumbotron .tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+    color: black;
+    font-family: Dela Gothic One;
+}
+
+.workingspace .tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+    color: black;
+    font-family: Dela Gothic One;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.jumbotron {
+    background-image: url(img/bgjumbo.png);
+    background-size: cover;
+    height: 540px;
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+
+.jumbotron::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4 {
+    font-family: Martian Mono;
+    color: black;
+    font-weight: 200;
+    margin-top: 60px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.container .workingspace {
+    margin-top: 120px;
+}
+
+.container .workingspace h3 {
+   font-size: 52px;
+   font-weight: 200;
+   text-transform: uppercase;
+   margin-top: -100px;
+}
+
+.container .workingspace span {
+    font-weight: 500;
+    color: blue;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 500;
+    color:white;
+}
+
+.testimonial {
+    margin-top: 100px;
+}
+
+.testimonial h5 {
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.testimonial .figure img {
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    margin: 20px 10px 10px;
+    opacity: 0.6;
+}
+
+.testimonial figure img.utama{
+    width: 95px;
+    height: 95px;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.testimonial .figure h5 {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    color: #1c2c5d;
+}
+
+.testimonial figcaption {
+    text-align: center;
+}
+.testimonial .figure p {
+    font-size: 12px;
+    color: #acacac;
+    margin-top: -5px !important;
+}
+
+.footer {
+    margin-top: 150px;
+}
+
+.footer p {
+    color: #acacac;
+    font-size: 18px;
+}
+
+
+/* DESKTOP VERSION */
+
+@media (min-width: 992px) { 
+
+    .navbar-brand, .nav-link {
+        color: black !important;
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
+        ;
+    }
+
+    .nav-link{
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0b63dc;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron .display-4 {
+        margin-top: 200px;
+    }
+
+    .jumbotron {
+        margin-top: -75px;
+        height: 640px;
+    }
+
+    .container .workingspace h3 {
+        font-size: 52px;
+        font-weight: 200;
+        text-transform: uppercase;
+        margin-top: 60px;
+    }
+
+    .container .workingspace img {
+        margin-left: 60px;
+
+    }
+
+    .testimonial h5 {
+        font-size: 32px;
+    }
+
+}
+    
+ 

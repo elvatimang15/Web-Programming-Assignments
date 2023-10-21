@@ -1,0 +1,117 @@
+
+
+.About {
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.About .about-content p {
+  margin: 5rem auto;
+  text-align: justify;
+  max-width: 55%;
+}
+
+.Gallery {
+  margin-top: -8rem;
+  padding: 5rem;
+}
+
+.Gallery .Gallery-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.gambar{
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.gambar img {
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+}
+
+.gambar img:hover{
+  transform: scale(1.05);
+
+}
+
+.header {
+  background-color: rgb(255, 130, 58);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backnav {
+  padding: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.backnav:hover {
+  background-color: rgb(196, 90, 29);
+}
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    padding: 0.6rem 3.8rem;
+    background-color: #3b6056;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: -2rem;
+  }
+  
+  .footer .logo img {
+    width: 3rem;
+    margin-left: 3.1rem;
+    margin-bottom: -1rem;
+    margin-top: 0.7rem;
+  }
+  
+  .footer .logo p {
+    color: #fff;
+  }
+  
+  .footer .contact p {
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    .gallery .gallery-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .footer {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .gallery .gallery-content {
+      grid-template-columns: 1fr;
+    }
+  }
