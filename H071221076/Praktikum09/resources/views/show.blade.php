@@ -78,7 +78,7 @@ nav li {
                 <input class="form-control" type="search" name="warna" placeholder="Search by Color"
                     aria-label="Search">
                 <button class="btn search" type="submit">Search</button>
-            </form>
+            </form> 
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
                     <a class="nav-link menu" role="button" data-bs-toggle="dropdown"
