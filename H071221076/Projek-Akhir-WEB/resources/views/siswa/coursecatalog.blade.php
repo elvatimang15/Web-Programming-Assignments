@@ -108,7 +108,7 @@
                 <div class="text-center">
                     @if ($course)
                         <a class="btn btn-primary mt-auto btn-sm"
-                            href="https://api.whatsapp.com/send/?phone=6282260640071&text&type=phone_number&app_absent=0">Daftar</a>
+                            href="https://api.whatsapp.com/send/?phone=6282238516988&text&type=phone_number&app_absent=0">Daftar</a>
                     @endif
                 </div>
             </div>
